@@ -70,12 +70,18 @@ yellow:         H 20-35,            S 100-255, V 100-255
 
 # VIDEO RECORDING GUIDELINES (CRITICAL FOR DETECTION)
 Best plate colors:    RED or BLUE (high saturation, unique HSV)
+
 Avoid:                Black or maroon plates with dark clothing
+
 Camera distance:      Far enough that plates stay fully in frame
 at lockout overhead
+
 Background:           Solid light color (grey/white wall = good)
+
 Angle:                Side profile (already correct)
+
 Lighting:             Even, no strong shadows across the plates
+
 Fallback if dark plates: wrap bright colored tape around collar
 
 # Next steps
@@ -83,12 +89,15 @@ Fallback if dark plates: wrap bright colored tape around collar
 meters instead of the current frame-height heuristic. Would
 use MediaPipe's detected ankle-to-hip distance as a pixel
 ruler, then scale using the athlete's known height.
+
 *Export a velocity-over-time graph as a PNG alongside the
 video — shows the bar's speed curve across the whole lift
 so you can see exactly when peak pull happens.
+
 *Add --start and --end flags to clip the video by timestamp
 so you don't have to manually trim before running the script.
   Example: --start 0:03 --end 0:07
+  
 * Wrap the whole thing in a Streamlit web UI
 
   
